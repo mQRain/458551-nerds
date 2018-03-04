@@ -15,7 +15,7 @@
        <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
+        <li class="site-navigation-active"><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
        </ul>
        <ul class="user-navigation">
@@ -23,8 +23,53 @@
        </ul>   
      </nav>
     </header>
-   Hello World!
-   
+
+    <main class="container">
+      <h1 class="visual-hidden">Магазин готовых шаблонов</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li class="breadcrumbs-current">Магазин готовых шаблонов</li>
+      </ul>
+      <section class="filtres">
+        <h2 class="visual-hidden">Фильт товаров</h2>
+        <b class="filters-sale">Стоимость:</b>
+        <b class="filters-sorting">Сортировака:</b>
+        <ul class="filters-sorting-item">
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По названию</li>
+        </ul>
+        <!-- Здесь будет форма -->
+      </section>
+
+      <section class="catalog">
+        <h2 class="visual-hidden">Список готовых шаблонов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-category">Шаблон PINK</span>
+                <span class="catalog-item-title">Продуктивный лендинг для приложения iOS и Android</span>
+              </a>
+            </h3>
+            <p>
+              <a href="catalog-item.html">
+                <img src="#" width="" height="" alt="Продуктивный лендинг для приложения iOS и Android">
+              </a>
+            </p>
+            <a class="button" href="#">9 900</a>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-list-item"><a href="#">1</a></li>
+          <li class="pagination-list-item pagination-item-current">2</li>
+          <li class="pagination-list-item"><a href="#">3</a></li>
+          <li class="pagination-list-item"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+    </main>
+
    <footer class="main-footer">
     	<div class="footer-social">
     	    <b>Давайте дружить, это выгодно!</b>
@@ -36,6 +81,14 @@
             </ul>
     	</div>
     </footer>
+
+    <section class="modal modal-post">
+      <h2>Форма обратной связи</h2>
+      <p>ВВедите Ваше Имя, Фамилию, номер телефона и емайл для связи.</p>
+      <!-- Здесь будет форма -->
+      <span class="modal-close">x</span>
+    </section>
+
   </body>  
 </html>
 
