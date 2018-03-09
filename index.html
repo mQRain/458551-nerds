@@ -1,126 +1,152 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Academy: Нёрдс</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HTML Academy: Нёрдс</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="#">
-        <img src="#" width="" height="" alt="Логотип компании Нёрдс">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li class="basket-link">Корзина</li>
-      </ul>
-    </nav>
-  </header>
-  <main class="container">
-    <div class="slider">
-      <div class="slider-content">
-        <span class="slider-info">Долго, дорого, скрупулезно.</span>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного</p>
-        <a class="btn-learn-more" href="">Узнать больше</a>
-      </div>
-    </div>
-    <section class="features">
-      <ul class="features-services">
-        <li class="features-sites">
-          <img src="" width="" height="" alt="">
-          <h3>Веб-Сайты</h3>
-          <p class="features-info">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <button class="btn-sites" type="submit">Заказать</button>
-        </li>
-        <li class="features-sites">
-          <img src="" width="" height="" alt="">
-          <h3>Приложения</h3>
-          <p class="features-info">Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button class="btn-annexes" type="submit">Заказать</button>
-        </li>
-        <li class="features-sites">
-          <img src="" width="" height="" alt="">
-          <h3>Презентации</h3>
-          <p class="features-info">Вы даже не подозреваете, насколько вы изумительны!</p>
-          <button class="btn-presentation" type="submit">Заказать</button>
-        </li>
-      </ul>
-    </section>
-    <div class="content-presentage">
-      <section class="small-info">
-        <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
-        <p class="small-job">
-          Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+	<div class="container">
+		<header class="header">
+			<img src="img/nerds-logo.png" alt="Разработка интернет приложений компании Нёрдс">
+			<nav class="main-navigation">
+				<ul class="site-navigation">
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="catalog.html">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="user-navigation">
+					<li class="basket-link">Корзина</li>
+				</ul>
+			</nav>
+			<div class="slider">
+				<div class="slider-item">
+					<input class="visual-hidden" type="radio" name="slider-shop" id="slider-btn1">
+					<label class="slider-shop" for="slider-btn1">Преимущество компании</label>
+					<input class="visual-hidden" type="radio" name="slider-shop" id="slider-btn2">
+					<label class="slider-shop" for="slider-btn2">Преимущество компании</label>
+					<input class="visual-hidden" type="radio" name="slider-shop" id="slider-btn3">
+					<label class="slider-shop" for="slider-btn3">Преимущество компании</label>
+				</div>
+				<div class="slider-content">
+					<span class="slider-info">Долго, дорого, скрупулезно.</span>
+					<p>Математически выверенный дизайн для вашего сайта или мобильного</p>
+					<a class="btn-learn-more" href="">Узнать больше</a>
+				</div>
+			</div>
+		</header>
+	</div>
+	<main class="container">
+		<section class="features">
+			<ul class="features-services">
+				<li class="features-sites">
+					<img src="img/illustration-1.png" width="300" height="146" alt="">
+					<h3>Веб-Сайты</h3>
+					<p class="features-info">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<button class="btn-sites" type="submit">Заказать</button>
+				</li>
+				<li class="features-sites">
+					<img src="img/illustration-2.png" width="300" height="146" alt="">
+					<h3>Приложения</h3>
+					<p class="features-info">Покорите топ-10 приложений в AppStore и Google Play</p>
+					<button class="btn-annexes" type="submit">Заказать</button>
+				</li>
+				<li class="features-sites">
+					<img src="img/illustration-3.png" width="300" height="146" alt="">
+					<h3>Презентации</h3>
+					<p class="features-info">Вы даже не подозреваете, насколько вы изумительны!</p>
+					<button class="btn-presentation" type="submit">Заказать</button>
+				</li>
+			</ul>
+		</section>
+		<div class="content-presentage">
+			<section class="small-info">
+				<h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+				<p class="small-job">
+					Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           превыше креатива. Работаем не покладая рук, как роботы.
-        </p>
-        <span class="order-info">Выполняем заказы на разработку:</span>
-        <ul class="presentation-info">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </section>
-      <section class="advantage">
-        <img src="" width="" height="" alt="Компания Нёрдс">
-        <span class="advantage-succes">с 2004 года Любим точность во всем:</span>
-        <ul class="advantage-percentages">
-          <li>
-            <p class="advantage-info">Уровень самоотдачи</p>
-          </li>
-          <li>
-            <p class="advantage-info">Соблюдение сроков</p>
-          </li>
-          <li>
-            <p class="advantage-info">Минимальная предоплата</p>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <div class="gallary-content">
-      <section class="gallary-item">
-        <h2 class="visual-hidden"Сотрудничество с компаниями</h2>
-        <img src="" width="" height="" alt="">
-        <img src="" width="" height="" alt="">
-        <img src="" width="" height="" alt="">
-        <img src="" width="" height="" alt="">
-      </section>
-    </div>
-    <div class="contact">
-      <div class="maps">
-        <div class="contacts-info">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p class="address">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
-          <p class="phone">тел. <a href="tel:78122757575">+7 (812) 275-75-75</a></p>
-          <button class="write" type="submit">Напишите нам</button>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <footer class="main-footer">
-        <div class="social-icons">
-          <b class="friends">Давайте дружить, это выгодно!</b>
-          <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
-          <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
-          </ul>
-        </div>
-      </footer>
-    </div>
-  </main>
-  <section class="modal modal-post">
-    <h2>Форма обратной связи</h2>
-    <p>ВВедите Ваше Имя, Фамилию, номер телефона и емайл для связи.</p>
-    <!-- Здесь будет форма -->
-    <span class="modal-close">x</span>
-  </section>
+				</p>
+				<span class="order-info">Выполняем заказы на разработку:</span>
+				<ul class="presentation-info">
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильных приложений для iOS и Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</section>
+			<section class="advantage">
+				<img src="img/nerds-illustration.png" width="360" height="208" alt="Компания Нёрдс">
+				<p class="advantage-succes">с 2004 года Любим точность во всем:</p>
+				<ul class="advantage-percentages">
+					<li>
+						<span>146<sup>%</sup></span>
+						<p class="advantage-info">Уровень самоотдачи</p>
+					</li>
+					<li>
+						<span>100<sup>%</sup></span>
+						<p class="advantage-info">Соблюдение сроков</p>
+					</li>
+					<li>
+						<span>50<sup>%</sup></span>
+						<p class="advantage-info">Минимальная предоплата</p>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<div class="gallary-content">
+			<div class="gallary-item">
+				<img src="img/logo-1.png copy.png" width="199" height="68" alt="">
+			</div>
+			<div class="gallary-item">
+				<img src="img/logo-2.png copy.png" width="199" height="68" alt="">
+			</div>
+			<div class="gallary-item">
+				<img src="img/logo-3.png copy.png" width="199" height="68" alt="">
+			</div>
+			<div class="gallary-item">
+				<img src="img/logo-4.png copy.png" width="199" height="68" alt="">
+			</div>
+		</div>
+		<div class="contacts">
+			<div class="map">
+				<div class="contacts-info">
+					<h3>NЁRDS DESIGN STUDIO</h3>
+					<p class="address">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+					<p class="phone">тел. <a href="tel:78122757575">+7 (812) 275-75-75</a></p>
+					<button class="write" type="submit">Напишите нам</button>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<footer class="main-footer">
+				<div class="social-icons">
+					<b class="friends">Давайте дружить, это выгодно!</b>
+					<p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+					<ul>
+						<li><a href="#" class="social-button">Вконтакте</a></li>
+						<li><a href="#" class="social-button">Фейсбук</a></li>
+						<li><a href="#" class="social-button">Инстаграм</a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</main>
+	<div class="modal-post">
+		<h3>Форма обратной связи</h3>
+		<form action="https://echo.htmlacademy.ru" method="post">
+			<label for="user-name">Имя</label>
+			<input type="text" name="name" id="user-name">
+			<label for="user-family">Фамилия</label>
+			<input type="text" name="family" id="user-family">
+			<label for="user-phone">Номер телефона</label>
+			<input type="tel" name="phone" id="user-phone">
+			<label for="user-email">Емайл</label>
+			<input type="email" name="email" id="user-email">
+			<button class="btn-modal" type="submit">Отправить</button>
+		</form>
+		<span class="modal-close">x</span>
+	</div>		
 </body>
 </html>
