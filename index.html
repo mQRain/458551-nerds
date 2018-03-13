@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>HTML Academy: Нёрдс</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
@@ -27,8 +28,13 @@
 				</nav>
 			</div>
 			<div class="slider">
-				<div class="slider-item">
-					<!-- Здесь будет форма -->
+				<input type="radio" class="slide-btn1" name="toggle" chcked>
+				<input type="radio" class="slide-btn2" name="toggle">
+				<input type="radio" class="slide-btn3" name="toggle">
+				<div class="slide-controls">
+					<label for="slide-btn1">Первый слайд</label>
+					<label for="slide-btn2">Второй слайд</label>
+					<label for="slide-btn3">Третий слайд</label>
 				</div>
 				<div class="slider-content">
 					<span class="slider-info">Долго, дорого, скрупулезно.</span>
@@ -97,7 +103,9 @@
 			</div>
 			<div class="gallary-content">
 				<div class="gallary-item">
-					<img src="img/logo-1.png copy.png" width="199" height="68" alt="">
+					<a href="https://htmlacademy.ru/intensive/htmlcss">
+						<img src="img/logo-1.png copy.png" width="199" height="68" alt="">
+					</a>
 				</div>
 				<div class="gallary-item">
 					<img src="img/logo-2.png copy.png" width="199" height="68" alt="">
@@ -137,16 +145,9 @@
 	</div>
 
 	<div class="modal-post">
-		<h3>Форма обратной связи</h3>
+		<h3>Напишите нам</h3>
 		<form action="https://echo.htmlacademy.ru" method="post">
-			<label for="user-name">Имя</label>
-			<input type="text" name="name" id="user-name">
-			<label for="user-family">Фамилия</label>
-			<input type="text" name="family" id="user-family">
-			<label for="user-phone">Номер телефона</label>
-			<input type="tel" name="phone" id="user-phone">
-			<label for="user-email">Емайл</label>
-			<input type="email" name="email" id="user-email">
+			<input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
 			<button class="btn-modal" type="submit">Отправить</button>
 		</form>
 		<span class="modal-close">x</span>
