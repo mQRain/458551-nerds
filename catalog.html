@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
@@ -33,25 +35,42 @@
 			<h2 class="visual-hidden">Фильтр товаров</h2>
 			<div class="filters-content-cat">
 				<div class="left-sidebar">
-					<section class="filtres-strip">
-						<h3>Стоимость:</h3>
-						<div class="filters-range">
-							<div class="btn-range1">1-й бегунок</div>
-							<div class="btn-strip">Полоска</div>
-							<div class="btn-range2">2-ой бегунок</div>
-							<div class="range-info">
-								от <span>0</span> до <span>50</span>
+					<form action="">
+						<section class="filtres-strip">
+							<h3>Стоимость:</h3>
+							<div class="filters-range">
+								<div class="btn-range1">1-й бегунок</div>
+								<div class="btn-strip">Полоска</div>
+								<div class="btn-range2">2-ой бегунок</div>
+								<div class="range-info">
+									от <span>0</span> до <span>50</span>
+								</div>
 							</div>
-						</div>
-					</section>
-					<section class="filters-radio">
-						<h3>Сетка:</h3>
-						<!-- Здесь будет форма -->
-					</section>
-					<section class="filters-checkbox">
-						<h3>Особенности:</h3>
-						<!-- Здесь будет форма -->
-					</section>
+						</section>
+						<section class="filters-radio">
+							<h3>Сетка:</h3>
+							<input type="radio" name="type-radio" id="radio-btn1" checked>
+							<label for="radio-btn1">Адаптивная</label>
+							<input type="radio" name="type-radio" id="radio-btn2">
+							<label for="radio-btn2">Фиксированная</label>
+							<input type="radio" name="type-radio" id="radio-btn3">
+							<label for="radio-btn3">Резиновая</label>
+						</section>
+						<section class="filters-checkbox">
+							<h3>Особенности:</h3>
+							<input type="checkbox" name="type-checkbox" id="checkbox-btn1" checked>
+							<label for="checkbox-btn1">Слайдер</label>
+							<input type="checkbox" name="type-checkbox" id="checkbox-btn2">
+							<label for="checkbox-btn2">Блок преимуществ</label>
+							<input type="checkbox" name="type-checkbox" id="checkbox-btn3" checked>
+							<label for="checkbox-btn3">Новости</label>
+							<input type="checkbox" name="type-checkbox" id="checkbox-btn4">
+							<label for="checkbox-btn4">Галерея</label>
+							<input type="checkbox" name="type-checkbox" id="checkbox-btn5">
+							<label for="checkbox-btn5">Корзина</label>
+						</section>
+						<button class="form-btn" type="submit">Показать</button>
+					</form>
 				</div>
 				<div class="content">
 					<div class="filters-catalog">
@@ -72,7 +91,7 @@
 						<h3 class="visual-hidden">Список готовых шаблонов</h3>
 						<div class="catalog-item">
 							<div class="catalog-header"></div>
-							<img src="" height="" width="" alt="">
+							<img src="img/img-sedona.jpg" height="576" width="360" alt="Шаблон информационного сайта Седона">
 							<div class="catalog-info">
 								<h3>Sedona</h3>
 								<p>Информационный сайт для туристов</p>
@@ -81,7 +100,7 @@
 						</div>
 						<div class="catalog-item">
 							<div class="catalog-header"></div>
-							<img src="" height="" width="" alt="">
+							<img src="img/img-barbershop.jpg" height="576" width="360" alt="Шаблон салона Барбершоп">
 							<div class="catalog-info">
 								<h3>Barbershop</h3>
 								<p>Сайт салоны красоты. Для мужчин, да.</p>
@@ -90,7 +109,7 @@
 						</div>
 						<div class="catalog-item">
 							<div class="catalog-header"></div>
-							<img src="" height="" width="" alt="">
+							<img src="img/img-aplus.jpg" height="576" width="360" alt="Шаблон услуг компании по повышению квалификации А Плюс">
 							<div class="catalog-info">
 								<h3>A Plus</h3>
 								<p>Лендинг курсов повышения квалификации</p>
@@ -99,7 +118,7 @@
 						</div>
 						<div class="catalog-item">
 							<div class="catalog-header"></div>
-							<img src="" height="" width="" alt="">
+							<img src="img/img-pink.jpg" height="576" width="360" alt="Шбалон интернет магазина Pink App">
 							<div class="catalog-info">
 								<h3>Pink App</h3>
 								<p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -108,7 +127,7 @@
 						</div>
 						<div class="catalog-item">
 							<div class="catalog-header"></div>
-							<img src="" height="" width="" alt="">
+							<img src="img/img-mishka.jpg" height="576" width="360" alt="Шбалон интернет магазина игрушек Мишка">
 							<div class="catalog-info">
 								<h3>MISHKA</h3>
 								<p>Интернет-магазин вязаных игрушек</p>
@@ -117,7 +136,7 @@
 						</div>
 						<div class="catalog-item">
 							<div class="catalog-header"></div>
-							<img src="" height="" width="" alt="">
+							<img src="img/img-kvast.jpg" height="576" width="360" alt="Магазин разливных напитков Кваст">
 							<div class="catalog-info">
 								<h3>Кваст</h3>
 								<p>Промо-сайт производителя крафтового кваса</p>

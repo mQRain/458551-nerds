@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -148,9 +149,14 @@
 		<h3>Напишите нам</h3>
 		<form action="https://echo.htmlacademy.ru" method="post">
 			<input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+			<label for="user-name">Ваше имя:</label>
+			<input type="text" name="email" id="user-email" placeholder="email@example.com">
+			<label for="user-email">Ваш e-mail:</label>
+			<textarea name="" id="user-massage" cols="30" rows="10" placeholder="В свобоной форме"></textarea>
+			<label for="user-massage">Текст письма:</label>	
 			<button class="btn-modal" type="submit">Отправить</button>
 		</form>
-		<span class="modal-close">x</span>
+		<button class="modal-close">Закрыть</button>
 	</div>
 </body>
 </html>
