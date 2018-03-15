@@ -56,4 +56,5 @@ header {
 .user-navigation a:hover,
 .user-navigation a:focus {
   border-bottom: 2px solid #fb565a;
+  padding-top: 5px;
 }
