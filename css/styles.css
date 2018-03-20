@@ -62,6 +62,11 @@ body {
 	color: #fb565a;
 }
 
+.main-navigation .cart-link {
+	background-image: url('../img/cart-icon.svg');
+	background-repeat: no-repeat;
+}
+
 .slider-content .slider-info1 {
 	font-family: 'Roboto Medium', Arial, sans-serif;
 	font-size: 55px;
