@@ -5,15 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header>
+	<header class="header">
 		<div class="container">
 			<div class="header-top">
-				<a class="img-logo">
+				<a class="logo">
 					<img src="img/nerds-logo.png" alt="Разработка интернет приложений компании Нёрдс">
 				</a>
-
 				<nav class="main-navigation">
 					<ul class="site-navigation">
 						<li><a href="#">Студия</a></li>
@@ -22,18 +23,39 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 					<ul class="user-navigation">
-						<li class="basket-link">Корзина</li>
+						<li class="cart-link">
+							<a href="#">Корзина</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
 			<div class="slider">
-				<div class="slider-item">
-					<!-- Здесь будет форма -->
+				<input type="radio" id="slide-btn1" class="slide-btn" name="toggle" checked>
+				<input type="radio" id="slide-btn2" class="slide-btn" name="toggle">
+				<input type="radio" id="slide-btn3" class="slide-btn" name="toggle">
+				<div class="slide-controls">
+					<label for="slide-btn1">Первый слайд</label>
+					<label for="slide-btn2">Второй слайд</label>
+					<label for="slide-btn3">Третий слайд</label>
 				</div>
-				<div class="slider-content">
-					<span class="slider-info">Долго, дорого, скрупулезно.</span>
-					<p>Математически выверенный дизайн для вашего сайта или мобильного</p>
-					<a class="btn-learn-more" href="">Узнать больше</a>
+				<div class="slides">
+					<div class="slider-content">
+						<span class="slider-info1">Долго, дорого, скрупулезно.</span>
+						<p class="slider-description">Математически выверенный дизайн 
+для вашего сайта или мобильного приложения.</p>
+						<a class="btn btn-red" href="#">Узнать больше</a>
+					</div>
+					<div class="slider-content">
+						<span class="slider-info2">Любим математику как никто другой</span>
+						<p class="slider-description">Никакого креатива, только математические формулы 
+для расчета идеальных пропорций.</p>
+						<a class="btn btn-red" href="#">Узнать больше</a>
+					</div>
+					<div class="slider-content">
+						<span class="slider-info3">Только ночь, только хардкор</span>
+						<p class="slider-description">Работать днем, как все? Мы против этого. Ближе к полуночи только начинается.</p>
+						<a class="btn btn-red" href="#">Узнать больше</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -41,24 +63,25 @@
 	<main>
 		<div class="container">
 			<section class="features">
+				<h2 class="visual-hidden">Наши преимущества</h2>
 				<ul class="features-services">
 					<li class="features-sites">
-						<img src="img/illustration-1.png" width="300" height="146" alt="">
-						<h3>Веб-Сайты</h3>
+						<img src="img/illustration-1.jpg" width="300" height="146" alt="">
+						<h3 class="features-name">Веб-Сайты</h3>
 						<p class="features-info">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-						<button class="btn-sites" type="submit">Заказать</button>
+						<button class="btn btn-red order" type="submit">Заказать</button>
 					</li>
 					<li class="features-sites">
-						<img src="img/illustration-2.png" width="300" height="146" alt="">
-						<h3>Приложения</h3>
+						<img src="img/illustration-2.jpg" width="300" height="146" alt="">
+						<h3 class="features-name">Приложения</h3>
 						<p class="features-info">Покорите топ-10 приложений в AppStore и Google Play</p>
-						<button class="btn-annexes" type="submit">Заказать</button>
+						<button class="btn btn-green order" type="submit">Заказать</button>
 					</li>
 					<li class="features-sites">
-						<img src="img/illustration-3.png" width="300" height="146" alt="">
-						<h3>Презентации</h3>
+						<img src="img/illustration-3.jpg" width="300" height="146" alt="">
+						<h3 class="features-name">Презентации</h3>
 						<p class="features-info">Вы даже не подозреваете, насколько вы изумительны!</p>
-						<button class="btn-presentation" type="submit">Заказать</button>
+						<button class="btn btn-yellow order">Заказать</button>
 					</li>
 				</ul>
 			</section>
@@ -67,7 +90,7 @@
 					<h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
 					<p class="small-job">
 						Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-          				превыше креатива. Работаем не покладая рук, как роботы.
+						превыше креатива. Работаем не покладая рук, как роботы.
 					</p>
 					<span class="order-info">Выполняем заказы на разработку:</span>
 					<ul class="presentation-info">
@@ -77,6 +100,7 @@
 					</ul>
 				</section>
 				<section class="advantage">
+					<h3 class="visual-hidden">Наши гарантии</h3>
 					<img src="img/nerds-illustration.png" width="360" height="208" alt="Компания Нёрдс">
 					<p class="advantage-succes">с 2004 года Любим точность во всем:</p>
 					<ul class="advantage-percentages">
@@ -97,7 +121,9 @@
 			</div>
 			<div class="gallary-content">
 				<div class="gallary-item">
-					<img src="img/logo-1.png copy.png" width="199" height="68" alt="">
+					<a href="https://htmlacademy.ru/intensive/htmlcss">
+						<img src="img/logo-1.png copy.png" width="199" height="68" alt="">
+					</a>
 				</div>
 				<div class="gallary-item">
 					<img src="img/logo-2.png copy.png" width="199" height="68" alt="">
@@ -112,11 +138,14 @@
 		</div>
 		<div class="contacts">
 			<div class="map">
-				<div class="contacts-info">
-					<h3>NЁRDS DESIGN STUDIO</h3>
-					<p class="address">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
-					<p class="phone">тел. <a href="tel:78122757575">+7 (812) 275-75-75</a></p>
-					<button class="write" type="submit">Напишите нам</button>
+				<img src="#" alt="">
+				<div class="container">
+					<div class="contacts-info">
+						<h3>NЁRDS DESIGN STUDIO</h3>
+						<p class="address">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+						<p class="phone">тел. <a href="tel:78122757575">+7 (812) 275-75-75</a></p>
+						<button class="write" type="submit">Напишите нам</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -137,19 +166,23 @@
 	</div>
 
 	<div class="modal-post">
-		<h3>Форма обратной связи</h3>
-		<form action="https://echo.htmlacademy.ru" method="post">
-			<label for="user-name">Имя</label>
-			<input type="text" name="name" id="user-name">
-			<label for="user-family">Фамилия</label>
-			<input type="text" name="family" id="user-family">
-			<label for="user-phone">Номер телефона</label>
-			<input type="tel" name="phone" id="user-phone">
-			<label for="user-email">Емайл</label>
-			<input type="email" name="email" id="user-email">
+		<h3>Напишите нам</h3>
+		<form class="modal-post-form" action="https://echo.htmlacademy.ru" method="post">
+			<label class="modal-post-input">
+				Ваше имя:
+				<input type="text" name="name" placeholder="Имя Фамилия">
+			</label>
+			<label class="modal-post-input">
+				Ваш e-mail:
+				<input type="text" name="email" placeholder="email@example.com">
+			</label>
+			<label class="modal-post-textarea">
+				Текст письма:
+				<textarea name="textinfo" cols="30" rows="10" placeholder="В свобоной форме"></textarea>
+			</label>	
 			<button class="btn-modal" type="submit">Отправить</button>
 		</form>
-		<span class="modal-close">x</span>
+		<button class="modal-close">Закрыть</button>
 	</div>
 </body>
 </html>
