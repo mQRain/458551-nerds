@@ -42,6 +42,10 @@ body {
 
 /* Стили в шапке */
 
+.header {
+	background-color: #eeeeee;
+}
+
 .site-navigation a,
 .user-navigation a {
 	font-family: 'Roboto Medium', Arial, sans-serif;
@@ -176,6 +180,12 @@ body {
 
 .slider-content {
 	display: none;
+}
+
+.catalog-info {
+	width: 360px;
+	min-height: 231px;
+	background-color: #ffffff;
 }
 
 #slide-btn1:checked ~ .slides .slider-content:nth-child(1) {
@@ -375,6 +385,12 @@ body {
 .filters-catalog {
 	display: flex;
 	align-items: center;
+	list-style: none;
+}
+
+.filters-catalog a {
+	text-decoration: none;
+	color: #b2b2b2;
 }
 
 .catalog-content {
@@ -388,6 +404,22 @@ body {
 	width: 400px;
 }
 
+.catalog-content .catalog-header {
+	width: 360px;
+	min-height: 40px;
+	border: 0;
+	background-image: url(../img/browser.png);
+	background-color: 
+}
+
+.catalog-item:hover .catalog-header {
+	display: block;
+	width: 360px;
+	min-height: 40px;
+	border: 0;
+	background-image: url(../img/browser.svg);
+}
+
 .pagination {
 	display: flex;
 	align-items: center;
@@ -399,4 +431,6 @@ body {
 	margin: 0 10px;
 }
 
-/* Конец построений сеток */
+
+
+
