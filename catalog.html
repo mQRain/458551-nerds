@@ -30,7 +30,7 @@
 		<h1>Магазин готовых шаблонов</h1>
 	</div>
 	<main class="container">
-		<div class="">
+		<div class="catalog-block">
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form method="get" action="https://echo.htmlacademy.ru">
@@ -95,15 +95,18 @@
 					<button class="form-btn" type="submit">Показать</button>
 				</form>
 			</section>
-			<div class="filters-catalog-wrapper">
+			<div class="catalog-wrapper">
 				<div class="filters-block">
 					<p class="sort-filter">Сортировать:</p>
 					<ul class="filter">
 						<li class="filter-price">
-							<a href="$" class="active">По Цене:</a>
+							<a href="#" class="active">По Цене:</a>
 						</li>
 						<li class="filter-type">
 							<a href="#">По типу</a>
+						</li>
+						<li class="filter-name">
+							<a href="#">По названию</a>
 						</li>
 						<li class="filter-descending">
 							<a href="" class="active">
@@ -119,99 +122,79 @@
 						</li>
 					</ul>
 				</div>
-			</div>
-			<section class="catalog">
-				<h2 class="visually-hidden">Список карточек товаров</h2>
-				<div class="catalog-item-block">
-					<ul class="catalog-list">
-						<li class="catalog-item">
-							<div class="catalog-header"></div>
-							<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
-							<div class="catalog-info">
-								<div class="price">
-									<h3 class="catalog-item-active">
-										<a href="#">Sedona</a>
-									</h3>
-									<p>Информационный сайт<br> для туристов</p>
+				<section class="catalog">
+					<h2 class="visually-hidden">Список карточек товаров</h2>
+					<div class="catalog-item-block">
+						<ul class="catalog-list">
+							<li class="catalog-item">
+								<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+								<div class="catalog-info">
+									<h3>Sedona</h3>
+									<p>Информационный сайт для туристов</p>
 									<button class="button" name="buy">9 900 РУБ.</button>
 								</div>
-							</div>
-						</li>
-						<li class="catalog-item">
-							<div class="catalog-header"></div>
-							<img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
-							<div class="catalog-info">
-								<div class="price">
+							</li>
+							<li class="catalog-item">
+								<img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
+								<div class="catalog-info">
 									<h3 class="catalog-item-active">
 										<a href="#">Pink App</a>
 									</h3>
 									<p>Продуктовый лендинг приложения для iOs и Android</p>
 									<button class="button" name="buy">9 900 РУБ.</button>
 								</div>
-							</div>
-						</li>
-						<li class="catalog-item">
-							<div class="catalog-header"></div>
-							<img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
-							<div class="catalog-info">
-								<div class="price">
+							</li>
+							<li class="catalog-item">
+								<img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
+								<div class="catalog-info">
 									<h3 class="catalog-item-active">
 										<a href="#">Barbershop</a>
 									</h3>
 									<p>Сайт салона красоты.<br> Для мужчин, да.</p>
 									<button class="button" name="buy">9 900 РУБ.</button>
 								</div>
-							</div>
-						</li>
-						<li class="catalog-item">
-							<div class="catalog-header"></div>
-							<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
-							<div class="catalog-info">
-								<div class="price">
+							</li>
+							<li class="catalog-item">
+								<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
+								<div class="catalog-info">
 									<h3 class="catalog-item-active">
 										<a href="#">Mishka</a>
 									</h3>
 									<p>Интернет-магазин<br> вязаных игрушек.</p>
 									<button class="button" name="buy">9 900 РУБ.</button>
 								</div>
-							</div>
-						</li>
-						<li class="catalog-item">
-							<div class="catalog-header"></div>
-							<img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
-							<div class="catalog-info">
-								<div class="price">
+							</li>
+							<li class="catalog-item">
+								<img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
+								<div class="catalog-info">
 									<h3 class="catalog-item-active">
 										<a href="#">A Plus</a>
 									</h3>
 									<p>Лендинг курсов повышения квалификации.</p>
 									<button class="button" name="buy">9 900 РУБ.</button>
 								</div>
-							</div>
-						</li>
-						<li class="catalog-item">
-							<div class="catalog-header"></div>
-							<img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast">
-							<div class="catalog-info">
-								<div class="price">
+							</li>
+							<li class="catalog-item">
+								<img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast">
+								<div class="catalog-info">
 									<h3 class="catalog-item-active">
 										<a href="#">Кваст</a>
 									</h3>
 									<p>Промо-сайт производителя крафтового кваса</p>
 									<button class="button" name="buy">9 900 РУБ.</button>
 								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
+							</li>
+						</ul>
+					</div>
 			</section>
 			<ul class="pagination">
 				<li class="pagination-list-item active">1</li>
 				<li class="pagination-list-item"><a href="#">2</a></li>
 				<li class="pagination-list-item"><a href="#">3</a></li>
-				<li class="pagination-list-item"><a href="#">4</a></li>
+				<li class="pagination-next"><a href="#">Следующая</a></li>
 			</ul>
 		</div>
+	</div>
 	</main>
 	<footer class="main-footer">
 		<div class="contacts">
