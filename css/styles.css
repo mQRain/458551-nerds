@@ -27,7 +27,7 @@ body {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	width: 1160px;
-	margin: 49px auto 0 auto;
+	margin: 47px 36px 10px;
 }
 
 .site-navigation {
@@ -167,13 +167,13 @@ a {
 
 .slider-item {
 	display: none;
-	padding: 78px 0 80px 0;
+	padding: 48px 0 80px 0;
 }
 
 .slider-item:nth-child(1) {
 	background-image: url("../img/slide1.png");
 	background-repeat: no-repeat;
-	background-position: 93% 18px;
+	background-position: 87% 0;
 }
 
 .slider-item:nth-child(2) {
@@ -550,7 +550,6 @@ a {
 
 .contacts-info .button-send {
 	display: inline-block;
-	wdith: 219px;
 	padding-left: 44px;
 	padding-right: 45px;
 	margin-top: 17px;
@@ -558,6 +557,7 @@ a {
 	padding-bottom: 15px;
 	margin-bottom: 47px;
 	border-radius: 3px;
+	border: 0;
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 18px;
@@ -918,6 +918,13 @@ a {
 	margin-left: 25px;
 }
 
+.filter-descending::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	background: url(../img/icon-down-dir.svg) no-repeat;
+}
+
 .filter .filter-ascending {
 	margin-right: 0;
 }
@@ -945,38 +952,38 @@ a {
 }
 
 .catalog-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-top: 58px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 58px;
 }
 
 .catalog-list {
 	display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  width: 760px;
-  justify-content: space-between;
-  margin-bottom: 27px;
-  margin-top: 53px;
-  list-style-type: none;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	width: 760px;
+	justify-content: space-between;
+	margin-bottom: 27px;
+	margin-top: 53px;
+	list-style-type: none;
 }
 
 .catalog-item::before {
-  content: "";
-  display: block;
-  width: 360px;
-  height: 40px;
-  background: url(../img/browser.svg) no-repeat;
-  opacity: 0.12;
+	content: "";
+	display: block;
+	width: 360px;
+	height: 40px;
+	background: url(../img/browser.svg) no-repeat;
+	opacity: 0.12;
 }
 
 .catalog-item {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 33px;
-  line-height: 0;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 33px;
+	line-height: 0;
 }
 
 .catalog-item:hover::before {
@@ -984,7 +991,7 @@ a {
 }
 
 .catalog-item:hover {
-  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
+	box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
 }
 
 .catalog-info {
@@ -1000,20 +1007,20 @@ a {
 .pagination {
 	display:flex;
 	list-style-type: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 60px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 60px;
 }
 
 .pagination a {
 	background-color: #eeeeee;
-  color: black;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  border: none;
-  box-shadow: none;
+	color: black;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	border: none;
+	box-shadow: none;
 }
 
 .pagination a:hover {
@@ -1021,40 +1028,41 @@ a {
 }
 
 .pagination-list-item.active {
-  color: black;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  width:44px;
-  height: 44px;
-  border: 3px solid #eeeeee;
+	color: black;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	width:44px;
+	height: 44px;
+	border: 3px solid #eeeeee;
 }
 
 .pagination-list-item a,
 .pagination-list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 3px;
-  text-decoration: none;
-  color: black;
-  
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	padd
+	border-radius: 3px;
+	text-decoration: none;
+	color: black;
+	
 }
 
 .pagination-list-item {
-  margin-right: 11px;
+	margin-right: 11px;
 }
 
-.pagination-next a {
-  display: inline-flex;
-  justify-content: center;
-  align-items:center;
-  height: 50px;
-  width: 260px;
-  border-radius: 3px;
-  text-decoration: none;
+.pagination-list-item:nth-child(4) + a {
+	display: inline-flex;
+	justify-content: center;
+	align-items:center;
+	height: 50px;
+	width: 260px;
+	border-radius: 3px;
+	text-decoration: none;
 }
 
 
@@ -1164,6 +1172,7 @@ a {
 	padding-left: 44px;
 	padding-right: 45px;
 	border-radius: 3px;
+	border: 0;
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 18px;
