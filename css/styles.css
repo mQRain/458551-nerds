@@ -928,6 +928,15 @@ a {
 	opacity: 0.3;
 }
 
+.filter-descending::before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 5px;
+	background: url(../img/icon-down-dir.svg) no-repeat;
+}
+
 .form-btn {
 	display: inline-block;
 	margin: 0;
@@ -954,7 +963,6 @@ a {
 .filter {
 	width: 360px;
 	display:flex;
-	justify-content: space-between;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
