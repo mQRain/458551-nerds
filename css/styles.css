@@ -49,11 +49,11 @@ body {
 }
 
 .user-navigation {
+	position: relative;
+	list-style-type: none;
 	max-width: 160px;
 	padding: 0;
 	margin: 26px 0 0 0;
-	list-style-type: none;
-	position: relative;
 }
 
 .site-navigation a,
@@ -288,6 +288,8 @@ a {
 }
 
 .features p {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 400;
 	padding-top: 16px;
 	width: 250px;
 }
@@ -299,7 +301,7 @@ a {
 	margin: 0;
 	padding: 0;
 	padding-left: 4px;
-	margin-top: 81px;
+	margin-top: 79px;
 }
 
 .features-item {
@@ -447,11 +449,14 @@ a {
 .description-block p {
 	margin: 0;
 	width: 625px;
+	padding-left: 5px;
 	margin-top: 34px;
 }
 
 .decription-info {
-	font-family: "Roboto", Arial, sans-serif; 
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', Arial, sans-serif; 
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -499,7 +504,7 @@ a {
 
 .percent {
 	height: 80px;
-	padding: 0;
+	padding-top: 18px;
 	font-weight: 700;
 	font-size: 45px;
 	line-height: 10px;
@@ -517,7 +522,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	margin-left: auto;
+	margin-left: 131px;
 }
 
 .about-work-block::before {
@@ -547,9 +552,12 @@ a {
 	align-items: flex-start;
 	margin: 0;
 	padding: 0;
+	padding-right: 43px;
+  padding-left: 31px;
 	padding-top: 50px;
-	border-bottom: 2px solid #eeeeee;
 	padding-bottom: 48px;
+	border-bottom: 2px solid #eeeeee;
+	
 }
 .gallary-content a {
 	display: inline-block;
@@ -1059,9 +1067,15 @@ a {
 }
 
 .catalog-info {
-	width: 361px;
-	min-height: 231px;
-	background-color: #eeeeee; 
+  background-color: #eeeeee;
+  position: absolute;
+  text-align: center;
+  padding: 40px 60px;
+  padding-top: 9px;
+  padding-bottom: 42px;
+  width: 100%;
+  bottom: 0px;
+  display: none;
 }
 
 .catalog-info h3 {
@@ -1272,7 +1286,9 @@ a {
 	background-color: #fb565a;
 }
 
-
+.modal-show {
+	display: block;
+}
 /* MODAL POPAP END */
 
 
