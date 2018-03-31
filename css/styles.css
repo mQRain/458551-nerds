@@ -12,12 +12,6 @@ body {
 	color: #283136;
 	font-weight: 400;
 	font-family: Roboto, Verdana, sans-serif;
-	overflow-x: hidden;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .container {
@@ -70,7 +64,6 @@ img {
 
 .site-navigation a,
 .user-navigation a {
-	display: block;
 	padding:0;
 	margin:0;
 	text-decoration: none;
@@ -79,6 +72,7 @@ img {
 	line-height: 30px;
 	font-weight: 500;
 	color: black;
+	display: block;
 	height: 33px;
 }
 
@@ -86,14 +80,14 @@ img {
 	padding-left: 82px;
 }
 
-.cart-link::before {
+.user-navigation::before {
 	content: "";
 	width: 15px;
 	height: 15px;
 	position: absolute;
 	background: url("../img/cart-icon.svg") no-repeat;
 	top: 7px;
-	left: 42px;
+	left:42px;
 }
 
 .main-header img:hover {
@@ -119,6 +113,14 @@ img {
 	border-bottom: 2px solid #fb565a;
 }
 
+/* HEADER END */
+
+/* SLIDER */
+
+a {
+	text-decoration: none;
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -126,9 +128,15 @@ img {
 	clip: rect(0, 0, 0, 0);
 }
 
+/*
+.main-header {
+	height: 50px;
+}
+*/
+
 .slider {
 	clear: both;
-  width: 1160px;
+	width: 1160px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -170,10 +178,6 @@ img {
 
 .slider-list {
 	list-style: none;
-}
-
-.slides {
-	min-height: 430px;
 }
 
 .slider-item {
@@ -313,6 +317,11 @@ img {
 .features-item {
 	padding-right: 100px;
 }
+
+.features-item:nth-child(3) {
+	margin-right: 0;
+	padding-right: 0;
+ }
 
 .web-site::before {
 	content: "";
@@ -1176,25 +1185,21 @@ img {
 }
 
 .buy-item {
-	display: inline-block;
-	vertical-align: middle;
-	width: 200px;
-	padding: 16px 20px;
-	margin-bottom: 43px;
-	border-radius: 3px;
+	display:inline-block;
+	vertical-align:middle;
+	width:200px;
+	padding:16px 20px;
+	margin-bottom:43px;
+	border-radius:3px;
 	background-color:#fb565a;
-	font-size: 16px;
-	line-height: 18px;
-	font-weight: 500;
-	color: #fff;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	box-sizing: border-box
-}
-
-.buy-item:hover {
-	background-color: #e74246;
+	font-size:16px;
+	line-height:18px;
+	ont-weight:500;
+	color:#fff;
+	text-align:center;
+	text-transform:uppercase;
+	text-decoration:none;
+	box-sizing:border-box
 }
 
 .catalog-item:hover .catalog-info {
