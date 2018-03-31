@@ -233,26 +233,26 @@
 	</footer>
 	<div class="modal-post">
 		<h2 class="modal-feedback-title">Напишите нам</h2>
-		<form class="modal-post-form" action="https://echo.htmlacademy.ru" method="post">
+		<form class="modal-post-form" method="post" action="#">
 			<div class="modal-post-input">
 				<label>
 					<span class="modal-post-label">Ваше Имя:</span>
-					<input type="text" id="username" name="username" placeholder="Имя Фамилия" required>
+					<input type="text" id="username" name="username" placeholder="Имя Фамилия">
 				</label>
 			</div>
 			<div class="modal-post-input">
 				<label>
 					<span class="modal-post-label">Ваш e-mail:</span>
-					<input type="email" id="email" name="email" placeholder="email@example.com" required>
+					<input type="email" id="email" name="email" placeholder="email@example.com">
 				</label>
 			</div>
 			<div class="modal-textarea">
 				<label>
 					<span class="modal-post-label">Текст письма:</span>
-					<textarea name="massage" id="massage" cols="30" rows="10" name="info-send" placeholder="В свобоной форме" required></textarea>
+					<textarea name="massage" id="massage" cols="30" rows="10" name="info-send" placeholder="В свободной форме"></textarea>
 				</label>
 			</div>
-			<button type="submit" name="button-send" class="button-send">Отправить</button>
+			<input type="submit" name="button-send" class="button-send" value="Отправить">
 		</form>
 		<button class="modal-close" type="button" name="button-close-modal" title="Закрыть">Закрыть</button>
 	</div>

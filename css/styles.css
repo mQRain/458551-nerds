@@ -1424,15 +1424,15 @@ a {
 	color: #e74246;
 }
 
-.modal-show {
-	display: block;
-	-webkit-animation: feedback-appear 0.5s;
-	animation: feedback-appear 0.5s;
+.modal-feedback-show {
+  display: block;
+  -webkit-animation: feedback-appear 0.5s;
+  animation: feedback-appear 0.5s;
 }
 
-.modal-error {
-	-webkit-animation: feedback-error 0.3s;
-	animation: feedback-error 0.3s;
+.modal-feedback-error {
+  -webkit-animation: feedback-error 0.3s;
+  animation: feedback-error 0.3s;
 }
 
 @-webkit-keyframes feedback-error {
