@@ -4,19 +4,20 @@
 }
 
 body {
-	min-width: 1160px;
-	background-color: white;
-	font-family: 'Roboto', Arial, sans-serif;
+	min-width: 1200px;
+	padding: 0;
+	
 	font-size: 16px;
 	line-height: 24px;
-	color: #2f3439;
+	color: #283136;
 	font-weight: 400;
+	font-family: Roboto, Verdana, sans-serif;
 }
 
 .container {
-	width: 1200px;
+	width: 1160px;
+	padding: 0 20px;
 	margin: 0 auto;
-	box-sizing: border-box;
 }
 
 .clearfix::after {
@@ -28,6 +29,7 @@ body {
 /* HEADER */
 
 .main-header {
+	padding-top: 50px;
 	background-color: #eeeeee;
 }
 
@@ -36,8 +38,6 @@ body {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin: 0; 
-	width: 1160px;
-	padding: 49px 0 0;
 }
 
 .site-navigation {
@@ -49,6 +49,7 @@ body {
 	width: 440px;
 	min-height: 13px;
 }
+
 
 .site-navigation .menu-active {
 	min-height: 13px;
@@ -135,20 +136,22 @@ a {
 */
 
 .slider {
+	clear: both;
+	width: 1160px;
+	margin: 0 auto;
 	position: relative;
-	background-color: #eeeeee;
 }
 
 .slider-controls {
 	position: absolute;
-	left: 48.8%;
-	bottom: 103px;
-	z-index: 100;
-	width: 160px;
+	bottom: 96px;
+	width: 240px;
 	height: 18px;
+	left: 50%;
+	margin-left: -112px; /* В макете управление сделано ровно по центру, но если здесь выравнивать при помощи "margin-left: половина ширины", то оно не по центру получается. */
 	text-align: center;
+	z-index: 100;
 	font-size: 0;
-	transform: translateX(-50%);
 }
 
 .slider-controls label {
@@ -179,6 +182,8 @@ a {
 }
 
 .slider-item {
+	width: 100%;
+	height: 100%;
 	display: none;
 	margin: 0;
 	padding: 0;
@@ -313,6 +318,11 @@ a {
 .features-item {
 	padding-right: 100px;
 }
+
+.features-item:nth-child(3) {
+	margin-right: 0;
+	padding-right: 0;
+ }
 
 .web-site::before {
 	content: "";
@@ -629,8 +639,8 @@ a {
 	height: 415px;
 	background: url("../img/map-marker.png");
 	background-color: #edebe4;
-  background-repeat: no-repeat;
-  background-position: center;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .contacts-info {
