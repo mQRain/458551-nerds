@@ -1187,6 +1187,10 @@ a {
 	box-sizing:border-box
 }
 
+.buy-item:hover {
+	background-color: #e74246;
+}
+ 
 .catalog-item:hover .catalog-info {
 	display:block
 }
