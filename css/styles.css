@@ -1333,13 +1333,13 @@ a {
 }
 
 .modal-post h2 {
-		font-size: 45px;
-		line-height: 45px;
-		font-weight: 500;
-		margin: 0;
-		margin-bottom: 40px;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	margin: 0;
+	margin-bottom: 40px;
 		
-		color: #000000;
+	color: #000000;
 }
 
 .modal-post-form {
