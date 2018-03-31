@@ -135,14 +135,16 @@
 		</div>
 		<div class="contacts">
 			<img src="img/map-marker.png" alt="Наш адрес: Санкт-Петербург, Б.Конюшенная, 19/8" width="1440" height="415">
-			<section class="contacts-info">
-				<h2 class="visually-hidden">Наши Контакты</h2>
-				<h3>NЁRDS DESIGN STUDIO</h3>
-				<p class="adress">191186, Санкт-Петербург,<br>
-				ул. Б. Конюшенная, д. 19/8</p>
-				<p class="phone"><a href="tel:78122757575">тел. +7 (812) 275-75-75</a></p>
-				<button class="button-send">Напишите нам</button>
-			</section>
+			<div class="contianer">
+				<section class="contacts-info">
+					<h2 class="visually-hidden">Наши Контакты</h2>
+					<h3>NЁRDS DESIGN STUDIO</h3>
+					<p class="adress">191186, Санкт-Петербург,<br>
+					ул. Б. Конюшенная, д. 19/8</p>
+					<p class="phone"><a href="tel:78122757575">тел. +7 (812) 275-75-75</a></p>
+					<button class="button-send">Напишите нам</button>
+				</section>
+			</div>
 		</div>
 	</main>
 	
@@ -186,38 +188,30 @@
 		</div>
 	</footer>
 	<div class="modal-post">
-		<h3>Напишите нам</h3>
+		<h2 class="modal-feedback-title">Напишите нам</h2>
 		<form class="modal-post-form" action="https://echo.htmlacademy.ru" method="post">
-			<label class="modal-post-input">
-				Ваше Имя:
-				<input type="text" name="user-name-family" placeholder="Имя Фамилия" required>
-			</label>
-			<label class="modal-post-input">
-				Ваш e-mail:
-				<input type="email" name="email" placeholder="email@example.com" required>
-			</label>
-			<label class="modal-post-textarea">
-				Текст письма:
-				<textarea name="" id="" cols="30" rows="10" name="info-send" placeholder="В свобоной форме" required></textarea>
-			</label>
-			<button class="button-send" type="submit" name=button-send>Отправить</button>
+			<div class="modal-post-input">
+				<label>
+					<span class="modal-post-label">Ваше Имя:</span>
+					<input type="text" id="username" name="username" placeholder="Имя Фамилия" required>
+				</label>
+			</div>
+			<div class="modal-post-input">
+				<label>
+					<span class="modal-post-label">Ваш e-mail:</span>
+					<input type="email" id="email" name="email" placeholder="email@example.com" required>
+				</label>
+			</div>
+			<div class="modal-textarea">
+				<label>
+					<span class="modal-post-label">Текст письма:</span>
+					<textarea name="massage" id="massage" cols="30" rows="10" name="info-send" placeholder="В свобоной форме" required></textarea>
+				</label>
+			</div>
+			<input type="submit" name="button-send" class="button-send" value="Отправить">
 		</form>
-		<button class="modal-close" name="button-close-modal"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
-		</button>
+		<button class="modal-close" type="button" name="button-close-modal" title="Закрыть">Закрыть</button>
 	</div>
-
-	<script>
-	var link = document.querySelector(".button-send");
-	var popup = document.querySelector(".modal-post");
-	var close = popup.querySelector(".modal-close");
-	link.addEventListener("click", function (evt) {
-		evt.preventDefault();
-		popup.classList.add("modal-show");
-	});
-	close.addEventListener("click", function (evt) {
-		evt.preventDefault();
-		popup.classList.remove("modal-show");
-	});
-		</script>
+	<script src="js/modal-post.js"></script>
 	</body>
 </html>
