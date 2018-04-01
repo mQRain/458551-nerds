@@ -1,3 +1,5 @@
+/* Проект Нёрды */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -57,7 +59,7 @@ body {
   padding: 0;
   padding-bottom: 3px;
   white-space: nowrap;
-    
+	
   position: relative;
 }
 
