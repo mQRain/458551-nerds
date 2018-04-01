@@ -16,7 +16,6 @@ body {
 
 .container {
 	width: 1160px;
-	padding: 0 20px;
 	margin: 0 auto;
 }
 
@@ -29,6 +28,7 @@ body {
 /* HEADER */
 
 .main-header {
+	width: 100%;
 	padding-top: 50px;
 	background-color: #eeeeee;
 }
@@ -43,16 +43,22 @@ body {
 .site-navigation {
 	display: flex;
 	list-style-type: none;
-	justify-content: space-between;
 	padding: 0;
 	margin: 26px 0 0 0;
 	width: 440px;
 	min-height: 13px;
 }
 
+.site-navigation li {
+	display: inline-block;
+  vertical-align: top;
 
-.site-navigation .menu-active {
-	min-height: 13px;
+  margin-right: 48px;
+  padding: 0;
+  padding-bottom: 3px;
+  white-space: nowrap;
+    
+  position: relative;
 }
 
 .user-navigation {
@@ -211,21 +217,21 @@ a {
 	background-position: 401px 18px;
 }
 
-#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+.product--1:checked ~ .slider-list .slider-item:nth-child(1) {
 	display: block;
 }
 
-#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+.product--2:checked ~ .slider-list .slider-item:nth-child(2) {
 	display: block;
 }
 
-#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+.product--3:checked ~ .slider-list .slider-item:nth-child(3) {
 	display: block;
 }
 
-#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
-#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
-#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+.product--1:checked ~ .slider-controls .slider-controls-item--1::before,
+.product--2:checked ~ .slider-controls .slider-controls-item--2::before,
+.product--3:checked ~ .slider-controls .slider-controls-item--3::before {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -313,6 +319,8 @@ a {
 	float: left;
 	margin-right: 100px;
 }
+
+/* TEST */
 
 .features-list:nth-child(3) {
 	margin-right: 0;
@@ -690,6 +698,7 @@ a {
 	color: white;
 	text-transform: uppercase;
 	background-color: #fb565a;
+	cursor: pointer;
 }
 
 .contacts-info .button-send:hover {
@@ -1436,15 +1445,15 @@ a {
 	color: #e74246;
 }
 
-.modal-show {
-	display: block;
-	-webkit-animation: feedback-appear 0.5s;
-	animation: feedback-appear 0.5s;
+.modal-feedback-show {
+  display: block;
+  -webkit-animation: feedback-appear 0.5s;
+  animation: feedback-appear 0.5s;
 }
 
-.modal-error {
-	-webkit-animation: feedback-error 0.3s;
-	animation: feedback-error 0.3s;
+.modal-feedback-error {
+  -webkit-animation: feedback-error 0.3s;
+  animation: feedback-error 0.3s;
 }
 
 @-webkit-keyframes feedback-error {
