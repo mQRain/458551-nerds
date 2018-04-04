@@ -55,12 +55,10 @@ body {
 .site-navigation li {
 	display: inline-block;
 	vertical-align: top;
-
 	margin-right: 48px;
 	padding: 0;
 	padding-bottom: 3px;
 	white-space: nowrap;
-	
 	position: relative;
 }
 
@@ -340,7 +338,8 @@ a {
 	width:300px;
 	height:146px;
 	background: url("../img/illustration-1.png") no-repeat;
-  
+}
+
 .features-list img {
 	margin-bottom: 19px;
 }
@@ -493,7 +492,6 @@ a {
 .studio-features-list li {
 	padding-left: 36px;
 	margin-bottom: 24px;
-		
 	position: relative;
 }
 
@@ -506,7 +504,6 @@ a {
 	width: 25px;
 	height: 2px;
 	background-color: #fb565a;
-
 	position: absolute;
 	top: 10px;
 	left: 1px;
@@ -542,7 +539,6 @@ a {
 .studio-features-list .subtitle {
 	display: block;
 	text-align: center;
-		
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 30px;
@@ -579,21 +575,17 @@ a {
 	border-top: solid 2px #eeeeee;
 	border-bottom: solid 2px #eeeeee;
 	font-size: 0;
-	
 	position: relative;
 }
 
 .gallary-item a {
 	display: inline-block;
 	vertical-align: middle;
-
 	width: 100%;
 	max-width: 260px;
 	margin: 0 20px;
-
 	line-height: 180px;
 	text-align: center;
-	
 	position: relative;
 }
 
@@ -624,7 +616,6 @@ a {
 	width: 2px;
 	height: 52px;
 	background-color: #eeeeee;
-
 	position: absolute;
 	top: 65px;
 	left: 280px;
@@ -684,7 +675,6 @@ a {
 .contacts-info p {
 	line-height: 18px;
 	color: #666666;
-	
 	margin: 0;
 	margin-bottom: 18px;
 	padding: 0;
@@ -949,11 +939,9 @@ a {
 	padding-left: 36px;
 	margin-top: 15px;
 	padding-bottom: 5px;
-		
 	font-size: 16px;
 	line-height: 20px;
 	color: #283136;
-		
 	box-sizing: border-box;
 	cursor: pointer;
 }
@@ -1287,14 +1275,12 @@ a {
 	margin-bottom: 60px;
 	padding: 0;
 	list-style: none;
-		
 	font-size: 0;
 }
 
 .pagination li {
 	display: inline-block;
-	vertical-align: top;
-		
+	vertical-align: top;	
 	width: 50px;
 	margin-right: 11px;
 }
@@ -1302,13 +1288,10 @@ a {
 .page-btn {
 	display: inline-block;
 	vertical-align: top;
-		
 	width: 50px;
 	margin-right: 10px;
-		
 	border-radius: 3px;
 	background-color: #eeeeee;
-		
 	box-sizing: border-box;
 }
 
@@ -1316,7 +1299,7 @@ a {
 	display: block;
 	width: 50px;
 	padding: 16px 0;
-		
+
 	text-align: center;
 	font-size: 16px;
 	line-height: 18px;
@@ -1372,15 +1355,12 @@ a {
 	padding-bottom: 85px;
 	background-color: #ffffff;
 	color: #000000;
-		
 	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
-		
 	position: fixed;
 	z-index: 1000;
 	bottom: 180px;
 	left: 50%;
 	margin-left: -480px;
-		
 	display: none;
 }
 
@@ -1388,16 +1368,13 @@ a {
 	width: 22px;
 	height: 22px;
 	padding: 0;
-	margin: 0;
-		
+	margin: 0;	
 	border: 0;
 	cursor: pointer;
-		
 	background-color: #ffffff;
 	position: absolute;
 	top: 78px;
 	right: 90px;
-		
 	font-size: 0;
 	opacity: 0.3;
 	outline: none;
@@ -1410,7 +1387,6 @@ a {
 	height: 3px;
 	background-color: #fb565a;
 	border-radius: 1px;
-		
 	position: absolute;
 	top: 10px;
 	left: 0;
@@ -1438,7 +1414,6 @@ a {
 	font-weight: 500;
 	margin: 0;
 	margin-bottom: 40px;
-		
 	color: #000000;
 }
 
@@ -1449,7 +1424,6 @@ a {
 .modal-post-input {
 	display: inline-block;
 	vertical-align: middle;
-		
 	margin-bottom: 33px;
 }
 
@@ -1465,7 +1439,6 @@ a {
 	display: block;
 	width: 160px;
 	margin-bottom: 10px;
-		
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 700;
@@ -1479,12 +1452,10 @@ a {
 	font-weight: 400;
 	color: rgba(68, 68, 68, 0.5);
 	font-family: 'Roboto', Verdana, sans-serif;
-		
 	background-color: #ffffff;
 	border-radius: 3px;
 	border: 2px solid #d7dcde;
-	outline: none;
-		
+	outline: none;	
 	width: 100%;
 	padding: 14px;
 	box-sizing: border-box;
@@ -1492,7 +1463,6 @@ a {
 
 .modal-post-form textarea {
 	resize: none;
-
 	padding: 10px;
 	padding-left: 14px;
 	padding-bottom: 12px;
