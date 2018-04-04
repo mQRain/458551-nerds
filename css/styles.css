@@ -329,6 +329,18 @@ a {
 	margin-right: 0;
 }
 
+.features-item:nth-child(3) {
+	margin-right: 0;
+	padding-right: 0;
+ }
+
+.web-site::before {
+	content: "";
+	display: inline-block;
+	width:300px;
+	height:146px;
+	background: url("../img/illustration-1.png") no-repeat;
+  
 .features-list img {
 	margin-bottom: 19px;
 }
