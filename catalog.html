@@ -49,7 +49,7 @@
 								</div>
 								<div class="price-controls">
 									<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-									<label class="max-price">от <input name="max-price" type="text" value="15000"></label>
+									<label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
 								</div>
 							</div>
 						</fieldset>
@@ -111,11 +111,13 @@
 							<li class="filter-name">
 								<a href="#">По названию</a>
 							</li>
-						</ul>
-							<div class="sorting-switch-block">
+							<li class="filter-descending">
 								<a class="sorting-switch current" aria-label="От большего к меньшему" title="От большего к меньшему" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
+							</li>
+							<li class="ascending">
 								<a class="sorting-switch" aria-label="От меньшего к большему" title="От меньшего к большему" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
-						</div>
+							</li>
+						</ul>
 					</div>
 					<div class="catalog-item-list">
 						<!--Sedona-->
@@ -173,27 +175,30 @@
 							</div>
 						</div>
 						<ul class="pagination">
-							<li class="pagination-list-item active">1</li>
-							<li class="pagination-list-item"><a href="#">2</a></li>
-							<li class="pagination-list-item"><a href="#">3</a></li>
-							<li class="pagination-list-item pagination-item-text"><a href="#">Следующая</a></li>
-						</ul>
+			  <li class="page-btn page-btn-active"><a>1</a></li>
+			  <li class="page-btn"><a href="#">2</a></li>
+			  <li class="page-btn"><a href="#">3</a></li>
+			  <li class="page-btn next-page"><a href="#">Следующая</a></li>
+			</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="contacts">
-			<div class="contianer">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=lVzua_i5UKK4bSViqxrnRqokc0dyRSr1&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+		<div class="contacts-inner">
+			<div class="container">
 				<div class="contacts-info">
 					<h2 class="visually-hidden">Наши Контакты</h2>
 					<h4>NЁRDS DESIGN STUDIO</h4>
 					<p>191186, Санкт-Петербург,<br>
 					ул. Б. Конюшенная, д. 19/8</p>
 					<p><a href="tel:78122757575">тел. +7 (812) 275-75-75</a></p>
-					<button class="button-send">Напишите нам</button>
+						<button class="button-send">Напишите нам</button>
 				</div>
-			</div>
+			</div>	
 		</div>
+	</div>	
 	</main>
 	<footer class="main-footer">
 		<div class="container">
