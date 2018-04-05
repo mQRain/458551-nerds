@@ -734,6 +734,15 @@ a {
 	cursor: pointer;
 }
 
+.button-send-info {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 77px;
+	padding-right: 77px;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
 .contacts-info .button-send:hover {
 	background-color: #e74246;
 }
@@ -1447,9 +1456,10 @@ a {
 			box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 	position: fixed;
 	z-index: 1000;
-	bottom: 180px;
+	top: 50%;
 	left: 50%;
-	margin-left: -480px;
+	margin-left: -468px;
+	margin-top: -334px;
 	display: none;
 }
 
