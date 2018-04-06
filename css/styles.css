@@ -748,14 +748,14 @@ a {
 	cursor: pointer;
 }
 
-.contacts-info .button-send:hover {
+.button-send:hover {
 	background-color: #e74246;
 }
 
-.contacts-info .button-send:active {
+.button-send:active {
 	background-color: #d7373b;
-    box-shadow: inset 0px 3px rgba(0, 0, 0, 0.1);
-    color: rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0px 3px rgba(0, 0, 0, 0.1);
+	color: rgba(255, 255, 255, 0.3);
 	-webkit-box-shadow: inset 0 3px 0 0 #c13135;
 }
 
